@@ -82,7 +82,7 @@ footer{display:grid;grid-template-columns:1fr 1fr 1fr;padding:1.2rem 1.4rem;font
 footer p{margin:0}
 footer p:nth-child(2){text-align:center}footer p:last-child{text-align:right}
 @media (max-width:900px){
-  .header{grid-template-columns:1fr auto}.header nav{display:none}.lang{grid-column:2}
+  .header{grid-template-columns:1fr auto;row-gap:.9rem}.header nav{grid-column:1/-1;display:flex;gap:1.2rem;overflow-x:auto;padding-top:.8rem;border-top:1px solid var(--line);scrollbar-width:none}.header nav::-webkit-scrollbar{display:none}.lang{grid-column:2;grid-row:1}
   .hero{grid-template-columns:1fr}.hero-media{min-height:56svh;border-left:0;border-top:1px solid var(--ink)}
   .intro{margin-left:0}
   .section-head{grid-template-columns:42px 1fr}.section-head>p:last-child{grid-column:2}
